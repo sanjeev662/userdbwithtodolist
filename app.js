@@ -6,7 +6,7 @@ const { getDate } = require("./date");
 const date = require(__dirname + "/date.js");
 
 const app = express();
-const port=4500;
+const port=process.env.PORT || 4500;
 
 app.set("view engine","ejs");
 
